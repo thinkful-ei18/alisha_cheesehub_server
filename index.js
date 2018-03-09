@@ -23,8 +23,8 @@ app.use(
 );
 
 app.get('/api/cheeses', (req, res)=> {
-  const colors = {
-    blues: [
+  const seedDb = {
+    cheeses: [
       'Bath Blue',
       'Barkham Blue',
       'Buxton Blue',
@@ -44,7 +44,7 @@ app.get('/api/cheeses', (req, res)=> {
       'Yorkshire Blue'
     ]};
 
-  res.json(colors.blues);
+  res.json(seedDb.cheeses);
 
 });
 
